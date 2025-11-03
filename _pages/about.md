@@ -22,8 +22,9 @@ social: false # includes social icons at the bottom of the page
 
 <p></p>
 
-Hi! I’m <strong>Jaemoo Choi</strong>, a postdoctoral researcher at <strong>Georgia Tech</strong>.
-My research focuses on the <strong>fundamental algorithms for generative AI (GenAI)</strong> and their applications across vision, language, and scientific domains (e.g., molecular generation). I am particularly interested in <strong>diffusion models, discrete diffusion, flow-based methods, and (multi-modal) large language models (LLMs/MLLMs)</strong>. At Georgia Tech, I am fortunate to be advised by <a href="https://scholar.google.com/citations?user=2z7iDDUAAAAJ&hl" target="_blank">Yongxin Chen</a> and to work with an outstanding group of researchers. I am also closely collaborating with <a href="https://scholar.google.com/citations?user=M-MfqpMAAAAJ&hl" target="_blank">Joonseok Lee</a>’s group. Prior to that, I received my <strong>Ph.D. in Mathematical Sciences</strong> and B.S. in Mathematics Education from Seoul National University.
+Hi! I’m a postdoctoral researcher at <strong>Georgia Tech</strong>. I am fortunate to be advised by <a href="https://scholar.google.com/citations?user=2z7iDDUAAAAJ&hl" target="_blank">Yongxin Chen</a> and to work with an outstanding group of researchers. I also have the pleasure of collaborating closely with <a href="https://scholar.google.com/citations?user=M-MfqpMAAAAJ&hl" target="_blank">Joonseok Lee</a> and his research group. Prior to that, I received my <strong>Ph.D. in Mathematical Sciences</strong> and B.S. in Mathematics Education from Seoul National University.
+
+My research focuses on the <strong>fundamental algorithms for generative AI (GenAI)</strong> and their applications across vision, language, and scientific domains (e.g., molecular generation). I am particularly interested in <strong>(discrete) diffusion models, flow-based methods, and (multi-modal) large language models (LLMs/MLLMs)</strong> and its applications, as well as their connections to control and dynamical systems.
 
 <strong>Contact: </strong>
 jchoi843 [at] gatech [dot] edu
