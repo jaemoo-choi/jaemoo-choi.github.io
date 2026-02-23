@@ -24,7 +24,7 @@ social: false # includes social icons at the bottom of the page
 
 Hi! I’m a postdoctoral researcher at <strong>Georgia Tech</strong>, working at FLAIR Lab, with Prof. <a href="https://scholar.google.com/citations?user=2z7iDDUAAAAJ&hl" target="_blank">Yongxin Chen</a>. I am very fortunate to be part of his group and to work with a supportive and inspiring community of researchers. I also have the pleasure of collaborating actively with Prof. <a href="https://scholar.google.com/citations?user=M-MfqpMAAAAJ&hl" target="_blank">Joonseok Lee</a> and his research group. Prior to that, I received my <strong>Ph.D. in Mathematical Sciences</strong> and B.S. in Mathematics Education from Seoul National University.
 
-My research focuses on the <strong>fundamental algorithms for generative AI (GenAI)</strong> and their applications across vision, language, and scientific domains (e.g., molecular generation). I am particularly interested in <strong>(discrete) diffusion models, flow-based methods, and large language models (LLMs)</strong> and its applications, as well as their connections to control and dynamical systems.
+My research focuses on the <strong>fundamental algorithms for generative AI (GenAI)</strong> and their applications across vision, language, and scientific domains (e.g., molecular generation). I am particularly interested in <strong>(discrete) diffusion models, flow-based methods, and large language models (LLMs)</strong> and its applications, as well as their connections to control and dynamical systems. <strong class="text-primary">Now, I am actively seeking full-time opportunities.</strong>
 
 <strong>Contact: </strong>
 jchoi843 [at] gatech [dot] edu
