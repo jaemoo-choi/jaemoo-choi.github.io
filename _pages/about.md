@@ -32,5 +32,5 @@ jchoi843 [at] gatech [dot] edu
 <strong>Follow: </strong>
 <a href="https://scholar.google.com/citations?user=Ba2G6sIAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i> Google Scholar</a>
 <strong> | </strong>
-<a href="https://github.com/jchoi843" target="_blank" title="GitHub"><i class="fab fa-github"></i> jchoi843</a>
+<a href="https://github.com/jaemoo-choi" target="_blank" title="GitHub"><i class="fab fa-github"></i> jaemoo-choi</a>
 <br><br>
