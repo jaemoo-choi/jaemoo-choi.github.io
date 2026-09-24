@@ -12,7 +12,7 @@
   --global-text-color-light: #828282;
   --global-theme-color: #0076df;
   --global-hover-color: #0076df;
-  --global-footer-bg-color: rgb(66.25, 66.25, 66.25);
+  --global-footer-bg-color: rgb(25.9803921569%, 25.9803921569%, 25.9803921569%);
   --global-footer-text-color: #e8e8e8;
   --global-footer-link-color: #ffffff;
   --global-distill-app-color: #828282;
@@ -27,14 +27,14 @@
 }
 
 html[data-theme=dark] {
-  --global-bg-color: rgb(66.25, 66.25, 66.25);
+  --global-bg-color: rgb(25.9803921569%, 25.9803921569%, 25.9803921569%);
   --global-code-bg-color: #2c3237;
   --global-text-color: #e8e8e8;
   --global-text-color-light: #e8e8e8;
   --global-theme-color: #2698ba;
   --global-hover-color: #2698ba;
   --global-footer-bg-color: #e8e8e8;
-  --global-footer-text-color: rgb(66.25, 66.25, 66.25);
+  --global-footer-text-color: rgb(25.9803921569%, 25.9803921569%, 25.9803921569%);
   --global-footer-link-color: #000000;
   --global-distill-app-color: #e8e8e8;
 }
@@ -331,7 +331,7 @@ footer.fixed-bottom a:hover {
   font-size: 1.5rem;
 }
 .publications h2.year {
-  color: rgb(193.75, 193.75, 193.75);
+  color: rgb(75.9803921569%, 75.9803921569%, 75.9803921569%);
   border-top: 1px solid #e8e8e8;
   padding-top: 1rem;
   margin-top: 2rem;
@@ -373,7 +373,7 @@ footer.fixed-bottom a:hover {
   color: #727272;
 }
 .publications ol.bibliography li .periodical > em {
-  color: rgb(0, 69.4242152466, 131.2);
+  color: rgb(0%, 27.2251824497%, 51.4509803922%);
 }
 .publications ol.bibliography li .awardNote {
   color: #c50000;
