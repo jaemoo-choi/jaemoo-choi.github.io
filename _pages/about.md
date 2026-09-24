@@ -24,9 +24,7 @@ social: false # includes social icons at the bottom of the page
 
 <p>Hi! I’m Jaemoo Choi, a postdoctoral researcher at <strong>Georgia Tech</strong>, where I work with Prof. <a href="https://scholar.google.com/citations?user=2z7iDDUAAAAJ&hl" target="_blank">Yongxin Chen</a> in the FLAIR Lab.</p>
 
-<p><strong>Recently, I’ve become especially interested in Physical AI and world models</strong>—how to build generative systems that can predict how the world evolves, remain coherent over time, and support meaningful interaction. My current work on video generation is one way I’m exploring these questions.</p>
-
-<p>More broadly, my research spans diffusion and flow-based models, large language models, post-training, distillation, and efficient sampling, with applications across vision, language, and scientific domains.</p>
+<p>Recently, I’ve become especially interested in <strong>Physical AI and world models</strong>, with a growing focus on building practical systems that solve real-world problems. More broadly, my research spans diffusion and flow-based models, large language models, post-training, distillation, and efficient sampling, with applications across vision, language, and scientific domains.</p>
 
 <p>Previously, I was jointly affiliated with the Graduate School of Data Science at Seoul National University, where I worked with Prof. <a href="https://scholar.google.com/citations?user=M-MfqpMAAAAJ&hl" target="_blank">Joonseok Lee</a> and his group. I received my <strong>Ph.D. in Mathematical Sciences</strong> and B.S. in Mathematics Education from Seoul National University.</p>
 
