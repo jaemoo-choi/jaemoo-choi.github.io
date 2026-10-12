@@ -22,9 +22,9 @@ social: false # includes social icons at the bottom of the page
 
 <p></p>
 
-<p>Hi! I’m Jaemoo Choi, a postdoctoral researcher at <strong>Georgia Tech</strong>, where I work with Prof. <a href="https://scholar.google.com/citations?user=2z7iDDUAAAAJ&hl" target="_blank">Yongxin Chen</a> in the FLAIR Lab.</p>
+<p>Hi! I’m Jaemoo Choi, a postdoctoral researcher in the FLAIR Lab at <strong>Georgia Tech</strong>, mentored by Prof. <a href="https://scholar.google.com/citations?user=2z7iDDUAAAAJ&hl" target="_blank">Yongxin Chen</a>.</p>
 
-<p>Recently, I’ve become especially interested in <strong>Physical AI and world models</strong>, with a growing focus on building practical systems that solve real-world problems. More broadly, my research spans diffusion and flow-based models, large language models, post-training, distillation, and efficient sampling, with applications across vision, language, and scientific domains.</p>
+<p>My research focuses on <strong>fundamental algorithms for generative AI</strong> and their applications across vision, language, and scientific domains such as molecular generation. I am particularly interested in <strong>diffusion models, including discrete diffusion, flow-based methods, and large language models</strong>, as well as their connections to control and dynamical systems. These days, I am especially excited about <strong>Physical AI and world models</strong>, and about building practical systems that solve real-world problems.</p>
 
 <p>Previously, I was jointly affiliated with the Graduate School of Data Science at Seoul National University, where I worked with Prof. <a href="https://scholar.google.com/citations?user=M-MfqpMAAAAJ&hl" target="_blank">Joonseok Lee</a> and his group. I received my <strong>Ph.D. in Mathematical Sciences</strong> and B.S. in Mathematics Education from Seoul National University.</p>
 
