@@ -229,6 +229,25 @@ table.table a {
   padding-bottom: 0.2em; /* bottom margin of the table */
 }
 
+.news table th.news-date {
+  width: 6.5rem;
+  padding: 0.45rem 1rem 0.45rem 0;
+  white-space: nowrap;
+  vertical-align: top;
+  font-weight: 600;
+  color: var(--global-theme-color);
+}
+
+.news table td.news-content {
+  padding: 0.45rem 0;
+  vertical-align: top;
+}
+
+.news table td.news-content ul {
+  margin: 0.35rem 0 0.2rem 1.2rem;
+  padding: 0;
+}
+
 // Social (bottom)
 
 .social {
