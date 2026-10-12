@@ -16,6 +16,8 @@
   --global-footer-text-color: #e8e8e8;
   --global-footer-link-color: #ffffff;
   --global-distill-app-color: #828282;
+  --news-date-color: #4c515a;
+  --news-divider-color: #e7e7e2;
 }
 :root .fa-sun {
   display: none;
@@ -37,6 +39,8 @@ html[data-theme=dark] {
   --global-footer-text-color: rgb(25.9803921569%, 25.9803921569%, 25.9803921569%);
   --global-footer-link-color: #000000;
   --global-distill-app-color: #e8e8e8;
+  --news-date-color: #e8e8e8;
+  --news-divider-color: rgba(255, 255, 255, 0.15);
 }
 html[data-theme=dark] .fa-sun {
   padding-left: 10px;
@@ -255,16 +259,27 @@ table.table a:hover:after {
 
 .news table th.news-date {
   width: 6.5rem;
-  padding: 0.45rem 1rem 0.45rem 0;
+  padding: 0.75rem 0.9rem 0.75rem 0;
   white-space: nowrap;
   vertical-align: top;
   font-weight: 600;
-  color: var(--global-theme-color);
+  font-variant-numeric: tabular-nums;
+  color: var(--news-date-color);
 }
 
 .news table td.news-content {
-  padding: 0.45rem 0;
+  padding: 0.75rem 0;
   vertical-align: top;
+}
+
+.news table th.news-date,
+.news table td.news-content {
+  border-bottom: 1px solid var(--news-divider-color);
+}
+
+.news table tr:last-child th.news-date,
+.news table tr:last-child td.news-content {
+  border-bottom: none;
 }
 
 .news table td.news-content ul {
