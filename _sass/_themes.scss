@@ -13,6 +13,8 @@
   --global-footer-text-color: #{$grey-color-light};
   --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color};
+  --news-date-color: #4c515a;
+  --news-divider-color: #e7e7e2;
 
   .fa-sun {
     display: none;
@@ -35,6 +37,8 @@ html[data-theme="dark"] {
   --global-footer-text-color: #{$grey-color-dark};
   --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$grey-color-light};
+  --news-date-color: #{$grey-color-light};
+  --news-divider-color: rgba(255, 255, 255, 0.15);
 
   .fa-sun {
     padding-left: 10px;

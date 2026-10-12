@@ -231,16 +231,27 @@ table.table a {
 
 .news table th.news-date {
   width: 6.5rem;
-  padding: 0.45rem 1rem 0.45rem 0;
+  padding: 0.75rem 0.9rem 0.75rem 0;
   white-space: nowrap;
   vertical-align: top;
   font-weight: 600;
-  color: var(--global-theme-color);
+  font-variant-numeric: tabular-nums;
+  color: var(--news-date-color);
 }
 
 .news table td.news-content {
-  padding: 0.45rem 0;
+  padding: 0.75rem 0;
   vertical-align: top;
+}
+
+.news table th.news-date,
+.news table td.news-content {
+  border-bottom: 1px solid var(--news-divider-color);
+}
+
+.news table tr:last-child th.news-date,
+.news table tr:last-child td.news-content {
+  border-bottom: none;
 }
 
 .news table td.news-content ul {
