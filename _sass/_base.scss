@@ -619,3 +619,105 @@ html.transition *:after {
   transition: all 750ms !important;
   transition-delay: 0 !important;
 }
+
+// Selected projects
+
+.projects-selected {
+  margin-top: 2rem;
+}
+.projects-selected .projects-note {
+  padding: 0 0 26px 0;
+  text-align: center;
+  font-size: 90%;
+  color: #7c7c7c;
+}
+.projects-selected .pline {
+  margin-bottom: 1.9rem;
+}
+.projects-selected .pline-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--global-theme-color);
+}
+.projects-selected .pline-sub {
+  margin: 0.1rem 0 0.5rem 0;
+  font-size: 0.97rem;
+  color: #727272;
+}
+.projects-selected ul.ptree,
+.projects-selected ul.ptree ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.projects-selected ul.ptree > li {
+  margin-top: 0.75rem;
+}
+.projects-selected ul.ptree ul {
+  margin-left: 0.45rem;
+}
+.projects-selected ul.ptree ul > li {
+  position: relative;
+  padding: 0.6rem 0 0 1.45rem;
+}
+/* vertical branch line, cut off after the last child */
+.projects-selected ul.ptree ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-left: 2px solid #ccd3dd;
+}
+.projects-selected ul.ptree ul > li:last-child::before {
+  bottom: auto;
+  height: 1.42rem;
+}
+/* horizontal tick into each child */
+.projects-selected ul.ptree ul > li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.42rem;
+  width: 1rem;
+  border-top: 2px solid #ccd3dd;
+}
+.projects-selected .pitem-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  column-gap: 1rem;
+}
+.projects-selected .pkw {
+  font-weight: 600;
+}
+.projects-selected .pref {
+  font-size: 0.92rem;
+  color: #727272;
+  white-space: nowrap;
+}
+.projects-selected .pref a {
+  font-weight: 600;
+}
+.projects-selected .paward {
+  color: #c50000;
+  font-weight: 600;
+}
+.projects-selected .pdesc {
+  font-size: 0.98rem;
+  color: #444;
+}
+
+// Keyword highlights in the about-page introduction
+.kw-model {
+  color: var(--kw-model-color);
+}
+.kw-method {
+  color: var(--kw-method-color);
+}
+.kw-app {
+  color: var(--kw-app-color);
+}

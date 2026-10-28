@@ -15,6 +15,9 @@
   --global-distill-app-color: #{$grey-color};
   --news-date-color: #4c515a;
   --news-divider-color: #e7e7e2;
+  --kw-model-color: #1f5fa8;
+  --kw-method-color: #b4470c;
+  --kw-app-color: #2e7d32;
 
   .fa-sun {
     display: none;
@@ -39,6 +42,9 @@ html[data-theme="dark"] {
   --global-distill-app-color: #{$grey-color-light};
   --news-date-color: #{$grey-color-light};
   --news-divider-color: rgba(255, 255, 255, 0.15);
+  --kw-model-color: #79b8ff;
+  --kw-method-color: #f2a65e;
+  --kw-app-color: #7fd18b;
 
   .fa-sun {
     padding-left: 10px;

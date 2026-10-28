@@ -1,0 +1,95 @@
+<div class="projects-selected" id="projects">
+  <h5 style="text-align: center; font-size: 150%; font-weight: 600; padding: 10px 0 10px 0">Selected Projects</h5>
+  <div class="projects-note">
+    Grouped by research line; an indented branch directly extends the work above it. See
+    <a href="https://scholar.google.com/citations?user=Ba2G6sIAAAAJ" target="_blank" title="Google Scholar">Google Scholar</a> or my
+    <a href="{{ '/assets/pdf/cv.pdf' | relative_url }}" target="_blank">CV</a> for the full list.
+  </div>
+
+  <div class="pline">
+    <div class="pline-title">Post-Training, Distillation, and Test-Time Scaling for Diffusion Models</div>
+    <div class="pline-sub">Reward fine-tuning and long-horizon generation for image, video, and world models.</div>
+    <ul class="ptree">
+      <li>
+        <div class="pitem-head">
+          <span class="pkw">Likelihood estimation</span>
+          <span class="pref"><a href="https://arxiv.org/abs/2602.04663" target="_blank">Rethinking RL</a> · ICML 2026</span>
+        </div>
+        <div class="pdesc">
+          The ELBO likelihood estimator, not the RL loss, drives diffusion RL: GenEval 0.24 → 0.95 on SD3.5-M, 4.6× more efficient than FlowGRPO.
+        </div>
+      </li>
+      <li>
+        <div class="pitem-head">
+          <span class="pkw">Scalable RL</span>
+          <span class="pref"><a href="https://arxiv.org/abs/2608.23664" target="_blank">RVM</a> · Preprint 2026 · with NVIDIA</span>
+        </div>
+        <div class="pdesc">
+          Folds reward feedback into a trajectory-free, likelihood-free velocity-matching loss that recovers Reinforce Adjoint Matching and stays close
+          to ELBO-based RL; best VBench on Wan2.1-T2V.
+        </div>
+      </li>
+      <li>
+        <div class="pitem-head">
+          <span class="pkw">Long-horizon distillation</span>
+          <span class="pref"><a href="https://arxiv.org/abs/2609.38562" target="_blank">LongTake</a> · Preprint 2026</span>
+        </div>
+        <div class="pdesc">
+          Trains with long-horizon teacher forcing, then initializes DMD directly, skipping few-step distillation; more motion over 30&#8209;second rollouts.
+        </div>
+      </li>
+      <li>
+        <div class="pitem-head">
+          <span class="pkw">Test-time scaling</span>
+          <span class="pref"><a href="https://arxiv.org/abs/2610.03120" target="_blank">In-Distribution Forcing</a> · Preprint 2026</span>
+        </div>
+        <div class="pdesc">Self-caches at test time to keep KV entries in distribution, extending short-horizon models to minute-long video.</div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="pline">
+    <div class="pline-title">Diffusion Samplers for Scientific Domains through Stochastic Optimal Control</div>
+    <div class="pline-sub">Adjoint Schrödinger bridge samplers for Boltzmann distributions, and their extensions.</div>
+    <ul class="ptree">
+      <li>
+        <div class="pitem-head">
+          <span class="pkw">Boltzmann sampling</span>
+          <span class="pref"
+            ><a href="https://arxiv.org/abs/2506.22565" target="_blank">ASBS</a> · NeurIPS 2025 · <span class="paward">Oral 0.3%</span></span
+          >
+        </div>
+        <div class="pdesc">
+          Generalizes adjoint sampling to the Schrödinger bridge, relaxing the memoryless condition. Provably convergent, it scales to molecular
+          conformers.
+        </div>
+        <ul>
+          <li>
+            <div class="pitem-head">
+              <span class="pkw">Annealed dynamics</span>
+              <span class="pref"><a href="https://arxiv.org/abs/2506.18165" target="_blank">NAAS</a> · NeurIPS 2025</span>
+            </div>
+            <div class="pdesc">
+              Replaces the uninformative reference process with non-equilibrium annealed dynamics, learned through an adjoint-matching-style lean
+              adjoint system.
+            </div>
+          </li>
+          <li>
+            <div class="pitem-head">
+              <span class="pkw">Mode coverage</span>
+              <span class="pref"><a href="https://arxiv.org/abs/2510.03824" target="_blank">PDNS</a> · ICLR 2026</span>
+            </div>
+            <div class="pdesc">Breaks sampling into proximal steps on path measures, each trained with a cross-entropy loss, to curb mode collapse.</div>
+          </li>
+          <li>
+            <div class="pitem-head">
+              <span class="pkw">Discrete spaces</span>
+              <span class="pref"><a href="https://arxiv.org/abs/2602.08243" target="_blank">DASBS</a> · ICML 2026</span>
+            </div>
+            <div class="pdesc">Carries adjoint matching and ASBS to discrete state spaces, where no gradients exist.</div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
