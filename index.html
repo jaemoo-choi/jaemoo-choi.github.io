@@ -135,6 +135,10 @@
           </li>
 
           <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+
+          <li class="nav-item">
             <a class="nav-link" href="#publications">Publications</a>
           </li>
 
@@ -176,7 +180,7 @@
 
 <p>Hi! I’m Jaemoo Choi, a postdoctoral researcher in the FLAIR Lab at <strong>Georgia Tech</strong>, mentored by Prof. <a href="https://scholar.google.com/citations?user=2z7iDDUAAAAJ&amp;hl" target="_blank">Yongxin Chen</a>.</p>
 
-<p>My research focuses on <strong>fundamental algorithms for generative AI</strong> and their applications across vision, language, and scientific domains such as molecular generation. I am particularly interested in <strong>diffusion models, including discrete diffusion, flow-based methods, and large language models</strong>, as well as their connections to control and dynamical systems. These days, I am especially excited about <strong>Physical AI and world models</strong>, and about building practical systems that solve real-world problems.</p>
+<p>My research focuses on <strong>fundamental algorithms for <span class="kw-model">diffusion and flow models</span></strong>, grounded in stochastic optimal control and optimal transport, to make them more <strong>controllable, efficient, and reliable</strong>. I develop <strong class="kw-method">post-training, distillation, test-time scaling, and sampling methods</strong> for <strong class="kw-app">image, video, and world models</strong>, as well as <strong class="kw-app">diffusion samplers for scientific domains</strong> such as molecular systems. Recently, I have been especially interested in <strong class="kw-app">long-horizon video and world models</strong> for <strong class="kw-app">Physical AI</strong>.</p>
 
 <p>Previously, I was jointly affiliated with the Graduate School of Data Science at Seoul National University, where I worked with Prof. <a href="https://scholar.google.com/citations?user=M-MfqpMAAAAJ&amp;hl" target="_blank">Joonseok Lee</a> and his group. I received my <strong>Ph.D. in Mathematical Sciences</strong> and B.S. in Mathematics Education from Seoul National University.</p>
 
@@ -246,7 +250,7 @@ jchoi843 [at] gatech [dot] edu
               <a href="https://arxiv.org/abs/2602.08243" target="_blank">DASBS</a>: A discrete version of Adjoint Matching and
               <a href="https://arxiv.org/abs/2506.22565" target="_blank">ASBS</a>. A first-order oracle for discrete diffusion sampler
             </li>
-            <li><a href="https://arxiv.org/abs/2602.04675" target="_blank">GSBoG</a>: Generalized Schr\"odinger Bridge Sampler on graphs</li>
+            <li><a href="https://arxiv.org/abs/2602.04675" target="_blank">GSBoG</a>: Generalized Schrödinger Bridge Sampler on graphs</li>
             <li>
               <a href="https://arxiv.org/abs/2602.15396" target="_blank">ASBM</a>: Scalable diffusion-based generative modeling through
               <a href="https://arxiv.org/abs/2506.22565" target="_blank">ASBS</a>
@@ -303,7 +307,7 @@ jchoi843 [at] gatech [dot] edu
               diffusion-based sampler framework. Generalization of Adjoint Sampler
             </li>
             <li>
-              <a href="https://arxiv.org/abs/2506.18165" target="_blank">NAAS</a>: Non-equilibrium Annealed Adjoint Sampler. General Schr\"odinger
+              <a href="https://arxiv.org/abs/2506.18165" target="_blank">NAAS</a>: Non-equilibrium Annealed Adjoint Sampler. General Schrödinger
               Bridge Sampler with Annealed Dynamics
             </li>
             <li>
@@ -363,7 +367,104 @@ jchoi843 [at] gatech [dot] edu
 
     <hr />
 
-     <div class="publications" id="publications">
+     <div class="projects-selected" id="projects">
+  <h5 style="text-align: center; font-size: 150%; font-weight: 600; padding: 10px 0 10px 0">Selected Projects</h5>
+  <div class="projects-note">
+    Grouped by research line; an indented branch directly extends the work above it. See
+    <a href="https://scholar.google.com/citations?user=Ba2G6sIAAAAJ" target="_blank" title="Google Scholar">Google Scholar</a> or my
+    <a href="/assets/pdf/cv.pdf" target="_blank">CV</a> for the full list.
+  </div>
+
+  <div class="pline">
+    <div class="pline-title">Post-Training, Distillation, and Test-Time Scaling for Diffusion Models</div>
+    <div class="pline-sub">Reward fine-tuning and long-horizon generation for image, video, and world models.</div>
+    <ul class="ptree">
+      <li>
+        <div class="pitem-head">
+          <span class="pkw">Likelihood estimation</span>
+          <span class="pref"><a href="https://arxiv.org/abs/2602.04663" target="_blank">Rethinking RL</a> · ICML 2026</span>
+        </div>
+        <div class="pdesc">
+          The ELBO likelihood estimator, not the RL loss, drives diffusion RL: GenEval 0.24 → 0.95 on SD3.5-M, 4.6× more efficient than FlowGRPO.
+        </div>
+      </li>
+      <li>
+        <div class="pitem-head">
+          <span class="pkw">Scalable RL</span>
+          <span class="pref"><a href="https://arxiv.org/abs/2608.23664" target="_blank">RVM</a> · Preprint 2026 · with NVIDIA</span>
+        </div>
+        <div class="pdesc">
+          Folds reward feedback into a trajectory-free, likelihood-free velocity-matching loss that recovers Reinforce Adjoint Matching and stays close
+          to ELBO-based RL; best VBench on Wan2.1-T2V.
+        </div>
+      </li>
+      <li>
+        <div class="pitem-head">
+          <span class="pkw">Long-horizon distillation</span>
+          <span class="pref"><a href="https://arxiv.org/abs/2609.38562" target="_blank">LongTake</a> · Preprint 2026</span>
+        </div>
+        <div class="pdesc">
+          Trains with long-horizon teacher forcing, then initializes DMD directly, skipping few-step distillation; more motion over 30&#8209;second rollouts.
+        </div>
+      </li>
+      <li>
+        <div class="pitem-head">
+          <span class="pkw">Test-time scaling</span>
+          <span class="pref"><a href="https://arxiv.org/abs/2610.03120" target="_blank">In-Distribution Forcing</a> · Preprint 2026</span>
+        </div>
+        <div class="pdesc">Self-caches at test time to keep KV entries in distribution, extending short-horizon models to minute-long video.</div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="pline">
+    <div class="pline-title">Diffusion Samplers for Scientific Domains through Stochastic Optimal Control</div>
+    <div class="pline-sub">Adjoint Schrödinger bridge samplers for Boltzmann distributions, and their extensions.</div>
+    <ul class="ptree">
+      <li>
+        <div class="pitem-head">
+          <span class="pkw">Boltzmann sampling</span>
+          <span class="pref"
+            ><a href="https://arxiv.org/abs/2506.22565" target="_blank">ASBS</a> · NeurIPS 2025 · <span class="paward">Oral 0.3%</span></span
+          >
+        </div>
+        <div class="pdesc">
+          Generalizes adjoint sampling to the Schrödinger bridge, relaxing the memoryless condition. Provably convergent, it scales to molecular
+          conformers.
+        </div>
+        <ul>
+          <li>
+            <div class="pitem-head">
+              <span class="pkw">Annealed dynamics</span>
+              <span class="pref"><a href="https://arxiv.org/abs/2506.18165" target="_blank">NAAS</a> · NeurIPS 2025</span>
+            </div>
+            <div class="pdesc">
+              Replaces the uninformative reference process with non-equilibrium annealed dynamics, learned through an adjoint-matching-style lean
+              adjoint system.
+            </div>
+          </li>
+          <li>
+            <div class="pitem-head">
+              <span class="pkw">Mode coverage</span>
+              <span class="pref"><a href="https://arxiv.org/abs/2510.03824" target="_blank">PDNS</a> · ICLR 2026</span>
+            </div>
+            <div class="pdesc">Breaks sampling into proximal steps on path measures, each trained with a cross-entropy loss, to curb mode collapse.</div>
+          </li>
+          <li>
+            <div class="pitem-head">
+              <span class="pkw">Discrete spaces</span>
+              <span class="pref"><a href="https://arxiv.org/abs/2602.08243" target="_blank">DASBS</a> · ICML 2026</span>
+            </div>
+            <div class="pdesc">Carries adjoint matching and ASBS to discrete state spaces, where no gradients exist.</div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <hr />
+      <div class="publications" id="publications">
   <h5 style="text-align: center; font-size: 150%; font-weight: 600; padding: 10px 0 10px 0">Selected Publications</h5>
   <div style="padding: 0 0 30px 0; text-align: center; font-size: 90%; color: #7c7c7c">
     (&#8727; Equal contribution, * Core contributors, <sup>†</sup> Equal advising. See
